@@ -80,7 +80,7 @@ def home():
     y_predicted = y_predicted * scale_factor
     y_test = y_test * scale_factor
 
-    st.divider()
+    # st.divider()
 
     from datetime import datetime, timedelta
 
@@ -108,14 +108,14 @@ def home():
 
     st.plotly_chart(fig2)
 
-    st.divider()
+    # st.divider()
 
     st.subheader('Closing Price vs Time Chart')
     fig = go.Figure()
     fig.add_trace(go.Scatter(x=df.index, y=df.Close, mode='lines', name='Closing Price'))
     st.plotly_chart(fig)
 
-    st.divider()
+    # st.divider()
     ma1 = st.slider('Select moving average', 0, 200, 100)
     st.subheader(f'Closing Price vs Time Chart with {ma1}MA')
     ma100 = df.Close.rolling(ma1).mean()
@@ -126,7 +126,7 @@ def home():
 
 
 
-    st.divider()
+    # st.divider()
     st.subheader('Closing Price vs Time Chart with 100MA & 200MA')
     ma100 = df.Close.rolling(100).mean()
     ma200 = df.Close.rolling(200).mean()
@@ -135,7 +135,7 @@ def home():
     fig.add_trace(go.Scatter(x=df.index, y=ma200, mode='lines', name='200MA', line=dict(color='green')))
     fig.add_trace(go.Scatter(x=df.index, y=df.Close, mode='lines', name='Closing Price', line=dict(color='blue')))
     st.plotly_chart(fig)
-    st.divider()
+    # st.divider()
 
 def main():
     im = Image.open('logo2.png')#Title and App Icon
