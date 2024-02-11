@@ -59,11 +59,3 @@ This repository contains a machine learning solution for stock price prediction 
 ## Contributing
 
 Feel free to contribute to the project! You can open issues, submit pull requests, or provide suggestions.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-Customize this template according to the specifics of your project, providing more details about the features, usage instructions, and any additional information that would be helpful for users and contributors.
