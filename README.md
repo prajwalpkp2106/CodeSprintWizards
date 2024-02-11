@@ -31,7 +31,7 @@ This repository contains a machine learning solution for stock price prediction 
 1. Clone the repository:
 
    bash
-   git clone https://github.com/yourusername/stock-analysis.git
+   git clone [https://github.com/yourusername/stock-analysis.git](https://github.com/prajwalpkp2106/CodeSprintWizards.git)
    
 
 2. Install dependencies:
