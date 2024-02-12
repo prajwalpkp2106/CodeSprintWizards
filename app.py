@@ -153,38 +153,10 @@ def main():
     with cent_co:
         st.image('logo2.png')
     
-    page_bg_img="""
-<style>
-[data-testid="stAppViewContainer"]{
-background: rgb(16,4,4);
-background: linear-gradient(18deg, rgba(16,4,4,1) 0%, rgba(0,66,228,1) 100%);
-background-position:  10px 0, 10px 0, 0 0, 0 0;
-background-size:cover;
-background-repeat: no-repeat; 
-}
 
-</style>
-
-
-"""
-    st.markdown(page_bg_img,unsafe_allow_html=True)
     menu = ["Stock Price Prediction", "Fundamental Analysis","About Us"]
     choice = st.sidebar.selectbox("Select Page", menu)
-    page_bg_img="""
-<style>
-[data-testid="stSidebarContent"]{
-background: rgb(16,4,4);
-background: linear-gradient(18deg, rgba(16,4,4,1) 0%, rgba(0,66,228,1) 100%);
-background-position:  10px 0, 10px 0, 0 0, 0 0;
-background-size:cover;
-background-repeat: no-repeat; 
-}
 
-</style>
-
-
-"""
-    st.markdown(page_bg_img,unsafe_allow_html=True)
 
     if choice == "Stock Price Prediction":
         home()
